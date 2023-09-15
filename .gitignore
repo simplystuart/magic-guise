@@ -1,0 +1,4 @@
+elm-stuff
+.netlify
+dist/main.js
+node_modules

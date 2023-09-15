@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="magic guise game">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+		<script>
+			window.pixelWidth = 8;
+			var pixelSize = window.pixelWidth + "px";
+			document.documentElement.style.setProperty('--pixel-size', pixelSize);
+		</script>
+		<link rel="stylesheet" href="/style.css" />
+		<script type="text/javascript" src="/main.js"></script>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script>
+			var app = Elm.Main.init({
+				node: document.getElementById("root"),
+				flags: {
+					debug: false,
+					pixelWidth: window.pixelWidth,
+					wallpaperRepeat: {
+						x: 8,
+						y: 1.5
+					},
+					wallpaperSize: {
+						height: 40,
+						width: 20 
+					}
+				}
+			});
+		</script>
+	</body>
+</html>

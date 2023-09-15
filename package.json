@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "elm-tooling": "^1.14.1",
+    "elm-watch": "^1.2.0-beta.3",
+    "netlify-cli": "^16.3.1"
+  },
+  "scripts": {
+    "start": "netlify dev && elm-watch hot",
+    "build": "elm-watch make --optimize"
+  }
+}
